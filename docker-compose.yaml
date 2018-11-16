@@ -9,7 +9,7 @@ services:
     depends_on:
       - mongo
     volumes:
-      - mongo-data:/app
+      - mean-data:/app
     networks:
      - my-network
   mongo:
@@ -18,12 +18,12 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - mongo-data:/data/db
+      - mean-data:/data/db
     networks:
      - my-network
 # define volume to be created
 volumes:
-  mongo-data:
+  mean-data:
 # define network to be created
 networks:
   my-network:
