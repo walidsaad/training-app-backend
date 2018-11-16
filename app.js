@@ -32,6 +32,6 @@ app.listen(port,function(){
 
 
 //Testtin server
-app.get('/', (req, res)=>{res.send('Hi Axway!');});
+app.get('/', (req, res)=>{res.send('Hi everyone!');});
 
 
