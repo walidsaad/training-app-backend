@@ -11,7 +11,7 @@ services:
     volumes:
       - mean-data:/app
     networks:
-     - my-network
+     - default
   mongo:
     container_name: mongo
     image: mongo
@@ -20,10 +20,15 @@ services:
     volumes:
       - mean-data:/data/db
     networks:
-     - my-network
+     - default
 # define volume to be created
 volumes:
   mean-data:
-# define network to be created
+# define network to be used
 networks:
-  my-network:
+  default:
+    external:
+      name: my-network
+# define network to be created
+#networks:
+#  my-network:
