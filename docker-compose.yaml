@@ -8,8 +8,8 @@ services:
       - "3000:3000"
     depends_on:
       - mongo
-    volumes:
-      - mean-data:/app
+    #volumes:
+    #  - mean-data:/app
     networks:
      - default
   mongo:
