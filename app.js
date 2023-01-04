@@ -12,7 +12,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 //connect to mongodb
-mongoose.connect('mongodb://mongo:27017/training-app', {useMongoClient: true});
+mongoose.connect('mongodb://mongo:27017/training-app',{ useNewUrlParser: true, useUnifiedTopology: true });
 //on connection ok
 mongoose.connection.on('connected',()=>{
     console.log('Connected to mongodb server at 27017 port');
