@@ -25,10 +25,10 @@ services:
 volumes:
   mean-data:
 # define network to be used
-networks:
-  default:
-    external:
-      name: my-network
-# define network to be created
 #networks:
-#  my-network:
+#  default:
+#    external:
+#      name: my-network
+# define network to be created
+networks:
+  my-network:
