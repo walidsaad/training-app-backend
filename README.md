@@ -1,1 +1,1 @@
-# training-app-backend
+# NodeJS Sample Application: training-app-backend
